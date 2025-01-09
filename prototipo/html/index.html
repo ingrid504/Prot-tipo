@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja BYD</title>
+    <style>
+        /*Reset de margens e padding */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Estilo para o fundo e o efeito parallax */
+        .parallax {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgqfRp6K43helOsJzBJPUR8ScvXy1GUEuBeq9Uz3tBbHjWWLqjXk0i4hUqxGvQJXGyAcR7aFN2w3wZiaCJSCuaH7xA0AZ5Yq7SLaTWbGW3_aQ8n_UuMbahQYGK4owK_1IzbGpBtwSZ7OwO5geERB6FcuSZxw-Ry6kt_c1IfdmBUQVGOAuCkg376UgSJ_hm0/s600-rw/BYD-King-Brasil%20%2821%29.jpg');
+            background-size: cover;
+            background-position: center;
+            z-index: 1;
+            transform: translateY(0);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        /* Estilos do conteúdo da loja */
+        .content {
+            position: relative;
+            z-index: 2;
+            color: #fff;
+            padding: 50px;
+        }
+
+        .header {
+            text-align: center;
+            margin-top: 150px;
+            color: #fff;
+        }
+
+        .header h1 {
+            font-size: 4rem;
+            font-weight: bold;
+        }
+
+        .header p {
+            font-size: 1.5rem;
+            margin-top: 10px;
+        }
+
+        .product-section {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 50px;
+            padding: 20px;
+        }
+
+        .product {
+            width: 280px;
+            margin: 20px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
+
+        .product img {
+            width: 100%;
+            height: auto;
+        }
+    
+        .product-info {
+            background-color: #333;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .product-info h3 {
+            margin: 0;
+            font-size: 1.2rem;
+        }
+
+        .product-info p {
+            font-size: 1rem;
+            color: #ddd;
+        }
+
+        .product:hover {
+            transform: translateY(-10px);
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: #fff;
+        }
+        
+        .footer a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Efeito Parallax -->
+    <div class="parallax" id="parallax"></div>
+
+    <!-- Conteúdo Principal -->
+    <div class="content">
+        <!-- Cabeçalho -->
+        <div class="header">
+            <h1>Bem-vindo à Loja BYD</h1>
+            <p>Explore os melhores carros elétricos e tecnologias de ponta.</p>
+        </div>
+
+        <!-- Seção de Produtos -->
+        <div class="product-section">
+            <div class="product">
+                <img src="https://www.tribunapr.com.br/wp-content/uploads/2024/04/30180449/30-abr-24-Novo-BYD-TAN-EV-chega-com-inovacoes-e-530-km-de-autonomia-1-970x550.png/300x200" alt="Carro 1"> 
+                <div class="product-info">
+                    <h3>BYD Tang EV</h3>
+                    <p>O SUV elétrico inovador</p>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPEoyvWw3TTOQfI0hO9FEzztJErCyIHbhekg&s/300x200" alt="Carro 2">
+                <div class="product-info">
+                    <h3>BYD Qin Pro</h3>
+                    <p>Sedã elétrico inovador</p>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="https://motorshow.com.br/wp-content/uploads/sites/2/2023/09/dolphin00003.jpg/300x200" alt="Carro 3">
+                <div class="product-info">
+                  <h3>BYD Dolphin</h3>
+                  <p>Completo e e ficiente</p>
+            </div>
+         </div>
+       </div> 
+    </div>
+</body>
+</html>
